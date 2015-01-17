@@ -16,7 +16,7 @@ strings_are_not_atoms() ->
     is_atom("true") =:= __.
 
 however_atoms_might_look_like_a_string() ->
-    is_atom('true') =:= __.
+    is_atom('false') =:= __.
 
 atoms_are_the_basis_of_all_calls() ->
     apply(erlang, list_to_atom, ["erlang"]) =:= __.
